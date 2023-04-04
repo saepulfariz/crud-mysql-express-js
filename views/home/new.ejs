@@ -1,0 +1,44 @@
+<%- include('../template/header.ejs'); %>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3><%= data %> </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="row">
+                <form class="col-5" action="/mahasiswa" method="post">
+
+                    <div class="mb-2">
+                        <label for="npm">NPM</label>
+                        <input type="text" class="form-control" name="npm" id="npm">
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama">
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="jurusan">Jurusan</label>
+                        <input type="text" class="form-control" name="jurusan" id="jurusan">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+                    <a href="/mahasiswa" class="btn btn-sm btn-secondary">Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../template/footer.ejs'); %>
